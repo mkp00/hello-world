@@ -23,7 +23,6 @@ namespace Services
         /// Runs this instance. Currently, overkill for the current requirements, but demonstrates how
         /// services can be composed from commands and queries and other services to represent business functionality.
         /// </summary>
-        /// <exception cref="System.NotImplementedException"></exception>
         public void Run()
         {
             printCmdHandler.Handle(printQryHandler.Handle());
